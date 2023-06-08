@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <form class="form">
+        <div class="step1">
+            <h2>Step 1: Your details</h2>
+            <div class="idiv">
+                <label for="name">Name</label>
+                <input type="text" placeholder="First and last name" id="name">
+            </div>
+            <div class="idiv">
+                <label for="e-mail">Email</label>
+                <input type="email" placeholder="example@domain.com" id="e-mail">
+            </div>
+            <div class="idiv">
+                <label for="phone">Phone</label>
+                <input type="text" placeholder="Eg. +447500000000" id="phone">
+            </div>
+        </div>
+
+        <div class="step2">
+            <h2>Step 2: Delivery address</h2>
+            <div class="idiv">
+                <label for="address">Address</label>
+                <textarea id="address" cols="30" rows="10"></textarea>
+            </div>
+            <div class="idiv">
+                <label for="pcode">Post code</label>
+                <input type="text" id="pcode">
+            </div>
+            <div class="idiv">
+                <label for="country">Country</label>
+                <input type="text" id="country">
+            </div>
+        </div>
+        
+        <div class="step3">
+            <h2>Step 3: Card details</h2>
+            <div class="cardtype">
+                <p>Card type</p>
+                <input type="radio" name="r1"> <i class="fa-brands fa-cc-visa"></i> VISA
+                <input type="radio" name="r1"> <i class="fa-brands fa-cc-amex"></i> AmEx
+                <input type="radio" name="r1"> <i class="fa-brands fa-cc-mastercard"></i> Mastercard
+            </div>
+            <div class="idiv">
+                <label for="cardnum">Card number</label>
+                <input type="text" id="cardnum">
+            </div>
+            <div class="idiv">
+                <label for="scode">Security code</label>
+                <input type="text" id="scode">
+            </div>
+            <div class="idiv">
+                <label for="card">Name on card</label>
+                <input type="text" placeholder="Exact name as on the card" id="card">
+            </div>
+        </div>
+
+        <button type="submit" class="btn">Buy it!</button>
+        
+    </form>
+</body>
+</html>
